@@ -1,0 +1,8 @@
+android.hardware.camera2
+private void takePicture(object sender, EventArgs e)
+    {
+        var intent = new Intent(MediaStore.ActionImageCapture);
+
+        StartActivityForResult(intent, TakePictureRequestCode);
+    }
+    
